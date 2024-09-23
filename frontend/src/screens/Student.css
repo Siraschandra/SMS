@@ -1,0 +1,409 @@
+.container1{
+    padding:10px;
+    overflow: auto;
+}
+.outer-layout{
+    max-width:80vw;
+    background: rgb(7, 91, 170);
+    margin: auto;
+    padding:10px;
+    border-radius: 7px;  
+}
+.outer-layout h1{
+    text-align: center;
+    color:white;
+}
+.outer-layout .form-inner{
+    padding:20px 10px 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:5px;
+}
+form{
+    padding:3px;
+}
+.form-control{
+    padding:10px;
+}
+.form-control label{
+    display: block;
+    margin-bottom: 10px;
+    color:white;
+}
+.form-control input{
+    padding :8px 8px  8px 5px;
+    width:100%;
+    outline:none;
+    font-size: 15px;
+    border-radius: 7px;
+    border:none;
+}
+.form-control select{
+    padding :8px 8px  8px 5px;
+    width:100%;
+    outline:none;
+    font-size: 15px;
+    border-radius: 7px;
+    border:none;    
+}
+/* The following is for styling the file input  */
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.custom-file-input::before {
+    content: 'Select a photo';
+    display: inline-block;
+    background: rgb(15, 5, 5);
+    border: 1px solid rgb(2, 1, 1);
+    border-radius: 5px;
+    padding: 10px 10px;
+    outline: none;
+    color:white;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 10pt;
+}
+.custom-file-input:hover::before {
+    border-color: black;
+}
+.custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+.btn-register{
+    padding:10px;
+    width:50%;
+    margin:auto;
+    display: block;
+    text-transform: uppercase;
+    outline:none;
+    border:none;
+    border-radius: 5px;
+    color:white;
+    background: rgb(3, 5, 102);
+    cursor:pointer;
+    font-size: 15px;
+}
+.btn-register:hover{
+    opacity: 0.7;
+}
+@media only screen and (max-width: 700px) {
+    .outer-layout .form-inner{
+        grid-template-columns: 1fr;
+    }
+    .search-form form {
+        flex-direction: column;
+    }
+}
+
+/* The below is for the student details file */
+.container2{
+    height:100vh;
+    padding:10px;
+    background: rgb(111, 32, 93);
+}
+.outer {
+    margin:auto;
+    max-width: 800px;
+    background: black;
+    padding:10px;
+}
+.outer input{
+    width:70%;
+    font-size: 15px;
+    border-radius: 5px 0 0px 5px;
+    border:none;
+    outline:none;
+    padding:10px;
+    margin-bottom: 20px;
+}
+.search-icon{
+    padding:10px;
+    background: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px ;
+    cursor:pointer;
+}
+.classes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    gap:15px;
+    margin-top: 30px;
+}
+.class-list{
+    background: rgb(100, 18, 66);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.class-list:hover{
+    opacity: 0.5;
+}
+.class-list p{
+    color:white;
+    padding:20px;
+}
+.linker{
+    text-decoration: none  ;
+}
+.outer h3{
+    color:rgb(0, 18, 182);
+    border:2px solid rgb(224, 197, 197);
+    padding:5px;
+    max-width: 30%;
+    background: wheat;
+}
+.table-layout{
+    overflow-x: auto;
+}
+
+table{
+    border:1px solid rgb(127, 92, 209);
+    border-collapse: collapse;
+}
+th, td {
+    border:1px solid rgb(192, 140, 140);
+    padding: 5px;
+    color:white;
+}
+th {
+    text-align: left;
+}
+.container3
+{
+    height:100vh;
+    padding:10px;
+    overflow-y:auto;
+    background: rgb(115, 37, 80);
+}
+.container3 .outer{
+    max-width: 90%;
+    background: rgb(26, 54, 5);
+}
+td:nth-child(12)  {
+    text-align: center;
+}
+td:nth-child(11)  {
+    text-align: center;
+}
+.search-form{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding:15px;
+}
+.search-form h4 {
+    text-align: center;
+    padding:5px;
+    color:white;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background: rgb(136, 84, 84);
+}
+.search-form form{
+    display:flex;
+    justify-content: center;
+}
+.search-form form input{
+    padding:10px;
+    font-size: 15px;
+    outline:none;
+}
+.search-form form select{
+    outline:none;
+    padding:10px;
+    font-size: 15px;
+}
+.btn-search{
+    background: rgb(83, 158, 139);
+    color:white;
+    padding: 10px;
+    border:none;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+}
+.btn-search:hover{
+    opacity: 0.8;
+}
+.admitCard-outer{
+    margin:auto;
+    margin: 100px 100px 0 100px;
+}
+.admitCard-outer .link{
+    display: block;
+    text-align: left;
+    padding:20px;
+    background: rgb(0, 11, 109);
+    margin:auto;
+    color:white;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.admitCard-outer .link:hover{
+    background: darkorange;
+    color:black;
+}
+.admitCardouter{
+    overflow:auto;
+}
+.admitCard
+{
+    display: grid;
+    grid-template-areas: 'top top top'
+    'middle middle middle'
+    'bottom bottom bottom';
+    grid-gap: 10px;
+    overflow:auto;
+    background-color: #d8e1e9;
+    padding: 10px;
+    width:600px;
+    padding-bottom: 30px;
+}
+.admitCardTop{
+    grid-area: top;
+    display:grid;
+    background:rgb(90, 33, 33);
+    grid-template-columns: 0.1fr 1fr;
+}
+.admitCardTop img{
+    width:90px;
+    height: 80px;
+}
+.admitCardMiddle{
+    grid-area:middle;
+    background:rgb(196, 165, 111);
+    padding:0 20px 20px 20px;
+}
+.admitCardBottom{
+    grid-area: bottom;
+    background:rgb(127, 92, 209);
+    padding:3px;
+}
+.schooldetails{
+    text-align: center;
+    color:white;
+    margin: auto;
+}
+.details{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+}
+.details p{
+    padding:5px;
+}
+.details img{
+    width:80px ;
+}
+.arrange{
+    margin-bottom:50px;
+    display: grid;
+    overflow:auto;
+    place-content: center;
+    place-items: center;
+}
+.exam form{
+    display: grid;
+    width: 50%;
+    place-content: center;
+    grid-template-columns: 1fr 0.1fr;
+    margin: auto;
+    margin-bottom: 40px;
+}         
+.printcmd{
+    padding:10px;
+    background:red;
+    outline:none;
+    border:none;
+    color:white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+    margin:auto;
+}
+.printCMD{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.examNumber{
+    padding:10px;
+    outline: none;
+}
+@media print {
+    @page { size: 110mm 54.5mm; }
+    .printcmd{
+        display:none;
+    }
+}
+.prints{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    gap:10px
+}
+.la{
+    display:grid;
+    place-items: center;
+    place-content: center;
+}
+.income-button {
+    display:grid;
+    margin:200px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    gap:10px;
+    place-content: center;      
+}
+
+.income-button .link{
+    padding:10px;
+    background: cyan;
+    border:none;
+    cursor:pointer;
+    font-size: 15px;
+}
+
+.income-button .link:hover{
+    background: darkcyan;
+    color:white;        
+}
+.income-h1{
+    margin:auto;
+    margin:0 100px 0 100px;
+    text-align: center;
+    background: rgb(102, 32, 7);
+    color:white;
+    text-transform: capitalize;
+}
+.incomeform{
+    border:2px solid red;
+    margin: auto;
+}
+.allincomedetails{
+    margin:100px;
+    background: rgb(245, 241, 238);
+    display: grid;
+    margin-top: 0;
+    overflow: auto;
+    margin-bottom: 5px;
+}
+.outerIncome{
+    padding:10px;
+}
+.innerIncome{
+    display:grid;
+    grid-template-columns: 0.1fr 0.5fr 1fr;
+    grid-template-rows:  1fr;
+    padding:10px;
+    border-bottom: 2px solid black;
+}
+.disable{
+    opacity: 0.5;
+}
+.disable:hover{
+    opacity: 0.5;
+}

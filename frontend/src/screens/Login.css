@@ -1,0 +1,71 @@
+.container{
+    height:100vh;
+    background: url("SMS.jpg");
+    padding:10px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    padding: 10px;
+}
+
+.layout
+{
+    padding: 40px;
+    margin:auto;
+    max-width: 400px;
+    margin-top: 100px;
+    border-radius: 8px;
+    background: rgb(110, 23, 75);
+}
+.layout h1{
+    margin: auto;
+    margin-top: 5px;
+    padding :4px;
+    text-align: center;
+    color:white;
+    background: rgb(214, 25, 25);
+    margin-bottom: 30px;
+}
+.remember-me{
+    display: block;
+    margin-top: 20px;
+    color:white;
+}
+#check{
+    margin-right: 10px;
+}
+.form-field{
+outline: none;
+    padding:10px;
+    margin: 3px 3px 3px 0;
+    width: 100%;
+    margin-top: 10px;
+}
+.btn{
+    width:100%;
+    padding:10px;
+    margin-top: 30px;
+    cursor:pointer;
+    background:rgb(2, 43, 175);
+    outline: none;
+    border:none;
+    color:white;
+    font-size: 15px;
+    text-transform: uppercase;   
+}
+.password-eye {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr ;
+}
+.password-eye input{
+    border:none;
+}
+#eye{
+    margin:auto;
+    background: white;
+    padding:10px;
+    margin-top: 10px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}

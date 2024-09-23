@@ -1,0 +1,17 @@
+*{
+  margin:0;
+  padding:0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 1000;
+}
+.notFound{
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+.notFound img{
+  height: 100vh;  
+  margin: auto;
+  display: block;
+}
