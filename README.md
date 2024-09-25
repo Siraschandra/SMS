@@ -2,11 +2,6 @@
 
 This is a MERN stack website which can be used for managing the school. It has most of the features covered.
 
-```bash
-https://manageschool1.herokuapp.com/
-
-``` 
-
 ### `LOGIN AS ADMIN AND SEE EVERYTHING`
 
 ```bash
