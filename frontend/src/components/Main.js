@@ -10,7 +10,7 @@ const Main = () => {
   useEffect(() => {
     const fetchItems = async () => {
       setLoading(true);
-      const { data } = await axios.get("/dashboard");
+      const { data } = await axios.get("https://sms-deploy-backend.onrender.com/dashboard");
       setLoading(false);
       console.log(data);
       setItems(data);
