@@ -17,7 +17,7 @@ export const login = (email, password) => async (dispatch) => {
       },
     };
     const { data } = await axios.post(
-      "/api/login",
+      "https://sms-deploy-backend.onrender.com/api/login",
       { email, password },
       config
     );
