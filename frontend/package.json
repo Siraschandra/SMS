@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "proxy": "https://sms-deploy-backend.onrender.com:5000",
+  "proxy": "https://sms-deploy-backend.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
