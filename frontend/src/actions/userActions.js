@@ -5,6 +5,7 @@ import {
   USER_LOGOUT,
 } from "../constants/userConstants";
 import axios from "axios";
+import cors from "cors";
 export const login = (email, password) => async (dispatch) => {
   try {
     dispatch({
@@ -16,8 +17,11 @@ export const login = (email, password) => async (dispatch) => {
         "Content-Type": "application/json",
       },
     };
+    const corsOptions = {
+      origin: "https://sms-deploy-backend.onrender.com/api/login", // frontend URI (ReactJS)
+    };
     const { data } = await axios.post(
-      "https://sms-deploy-backend.onrender.com/api/login",
+      corsOptions,
       { email, password },
       config
     );
