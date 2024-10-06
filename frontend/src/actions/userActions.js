@@ -3,6 +3,7 @@ import {
   USER_LOGIN_REQUEST,
   USER_LOGIN_SUCCESS,
   USER_LOGOUT,
+  DOMAIN_NAME
 } from "../constants/userConstants";
 import axios from "axios";
 import cors from "cors";
