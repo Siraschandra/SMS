@@ -18,7 +18,7 @@ export const login = (email, password) => async (dispatch) => {
       },
     };
     const corsOptions = {
-      origin: "https://sms-deploy-backend.onrender.com/api/login", // frontend URI (ReactJS)
+      origin: `${DOMAIN_NAME}/api/login`, // frontend URI (ReactJS)
     };
     const { data } = await axios.post(
       corsOptions,
