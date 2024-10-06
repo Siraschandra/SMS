@@ -6,6 +6,7 @@ import { teacherregister } from "../actions/teacherActions";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
 import "./Student.css";
+const DOMAIN_NAME = "https://sms-deploy-backend.onrender.com";
 const TeacherRegister = ({ history }) => {
   const dispatch = useDispatch();
   const [uploading, setUploading] = useState(false);
@@ -25,10 +26,12 @@ const TeacherRegister = ({ history }) => {
   const [estimated_salary, setEstimated_salary] = useState("");
   const [image, setImage] = useState("");
   const uploadFileHandler = async (e) => {
-    const { data: CLOUDINARY_URL } = await axios.get("/api/config/cloudinary");
+    const { data: CLOUDINARY_URL } = await axios.get(
+      `${DOMAIN_NAME}/api/config/cloudinary`
+    );
 
     const { data: CLOUDINARY_UPLOAD_PRESET } = await axios.get(
-      "/api/config/cloudinarypreset"
+      `${DOMAIN_NAME}/api/config/cloudinarypreset`
     );
     setTime(true);
     setTimeout(() => {
