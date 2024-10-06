@@ -70,7 +70,7 @@ const TeacherSalary = ({ history }) => {
                 />
               </div>
               <div className="form-control">
-                <label for="year">Salary for Year</label>
+                <label for="year">Salary for which Year</label>
                 <input
                   type="string"
                   value={year}
