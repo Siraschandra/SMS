@@ -12,6 +12,7 @@ import {
   STAFF_SALARY_FAIL,
   STAFF_SALARY_REQUEST,
   STAFF_SALARY_SUCCESS,
+  DOMAIN_NAME,
 } from "../constants/staffConstants";
 
 export const PaySalary =
@@ -31,7 +32,7 @@ export const PaySalary =
         },
       };
       const { data } = await axios.post(
-        `/api/STAFFs/fees/${staffname}/${staffid}`,
+        `${DOMAIN_NAME}/api/STAFFs/fees/${staffname}/${staffid}`,
         {
           salaryForTheYear,
           salaryForTheMonth,
@@ -87,7 +88,7 @@ export const staffregister =
         },
       };
       const { data } = await axios.post(
-        "/api/staffs/register",
+        `${DOMAIN_NAME}/api/staffs/register`,
         {
           staff_name,
           qualification,
@@ -126,7 +127,9 @@ export const deleteStaff = (id) => async (dispatch) => {
     dispatch({
       type: STAFF_DELETE_REQUEST,
     });
-    const { data } = await axios.delete(`/api/staffs/delete/${id}`);
+    const { data } = await axios.delete(
+      `${DOMAIN_NAME}/api/staffs/delete/${id}`
+    );
     dispatch({
       type: STAFF_DELETE_SUCCESS,
       payload: data,
@@ -148,7 +151,7 @@ export const listStaffs = () => async (dispatch) => {
     dispatch({
       type: STAFF_LIST_REQUEST,
     });
-    const { data } = await axios.get("/api/staffs");
+    const { data } = await axios.get(`${DOMAIN_NAME}/api/staffs`);
     dispatch({
       type: STAFF_LIST_SUCCESS,
       payload: data,
