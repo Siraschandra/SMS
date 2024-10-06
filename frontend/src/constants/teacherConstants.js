@@ -17,3 +17,4 @@ export const TEACHER_LIST_REQUEST = "TEACHER_LIST_REQUEST";
 export const TEACHER_LIST_SUCCESS = "TEACHER_LIST_SUCCESS";
 export const TEACHER_LIST_FAIL = "TEACHER_LIST_FAIL";
 export const TEACHER_LIST_RESET = "TEACHER_LIST_RESET";
+export const DOMAIN_NAME = "https://sms-deploy-backend.onrender.com";
