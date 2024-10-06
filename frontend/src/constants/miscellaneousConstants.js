@@ -17,3 +17,5 @@ export const ALL_SALARY_REQUEST = "ALL_SALARY_REQUEST";
 export const ALL_SALARY_SUCCESS = "ALL_SALARY_SUCCESS";
 export const ALL_SALARY_FAIL = "ALL_SALARY_FAIL";
 export const ALL_SALARY_RESET = "ALL_INCOME_RESET";
+
+export const DOMAIN_NAME = "https://sms-deploy-backend.onrender.com";
