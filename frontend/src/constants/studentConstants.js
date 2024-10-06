@@ -30,3 +30,5 @@ export const STUDENT_FEES_REQUEST = "STUDENT_FEES_REQUEST";
 export const STUDENT_FEES_SUCCESS = "STUDENT_FEES_SUCCESS";
 export const STUDENT_FEES_FAIL = "STUDENT_FEES_FAIL";
 export const STUDENT_FEES_RESET = "STUDENT_FEES_RESET";
+
+export const DOMAIN_NAME = "https://sms-deploy-backend.onrender.com";
