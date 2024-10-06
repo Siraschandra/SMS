@@ -18,6 +18,7 @@ import {
   STUDENT_FEES_REQUEST,
   STUDENT_FEES_SUCCESS,
   STUDENT_FEES_FAIL,
+  DOMAIN_NAME,
 } from "../constants/studentConstants";
 
 //The below uses function within a function which is privileged by redux-thunk
@@ -26,7 +27,7 @@ export const listStudents = () => async (dispatch) => {
     dispatch({
       type: STUDENT_LIST_REQUEST,
     });
-    const { data } = await axios.get("/api/students");
+    const { data } = await axios.get(`${DOMAIN_NAME}/api/students`);
     dispatch({
       type: STUDENT_LIST_SUCCESS,
       payload: data,
@@ -48,7 +49,7 @@ export const classlistStudent = (id) => async (dispatch) => {
     dispatch({
       type: STUDENT_CLASS_LIST_REQUEST,
     });
-    const { data } = await axios.get(`/api/students/class/${id}`);
+    const { data } = await axios.get(`${DOMAIN_NAME}/api/students/class/${id}`);
     dispatch({
       type: STUDENT_CLASS_LIST_SUCCESS,
       payload: data,
@@ -72,7 +73,7 @@ export const studentSearch = (name, classname, rollno) => async (dispatch) => {
     });
     console.log(name, classname, rollno);
     const { data } = await axios.get(
-      `/api/students/search/${name}/${classname}/${rollno}`
+      `${DOMAIN_NAME}/api/students/search/${name}/${classname}/${rollno}`
     );
     console.log("Data is ", data);
     dispatch({
@@ -120,7 +121,7 @@ export const Register =
         },
       };
       const { data } = await axios.post(
-        "/api/students/register",
+        `${DOMAIN_NAME}/api/students/register`,
         {
           student_name,
           classname,
@@ -158,7 +159,9 @@ export const deleteStudent = (id) => async (dispatch) => {
     dispatch({
       type: STUDENT_DELETE_REQUEST,
     });
-    const { data } = await axios.delete(`/api/students/delete/${id}`);
+    const { data } = await axios.delete(
+      `${DOMAIN_NAME}/api/students/delete/${id}`
+    );
     dispatch({
       type: STUDENT_DELETE_SUCCESS,
       payload: data,
@@ -206,7 +209,7 @@ export const PayFees =
         },
       };
       const { data } = await axios.post(
-        `/api/students/fees/${studentId}`,
+        `${DOMAIN_NAME}/api/students/fees/${studentId}`,
         {
           student_name,
           classname,
