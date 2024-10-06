@@ -22,7 +22,7 @@ export const login = (email, password) => async (dispatch) => {
       origin: `${DOMAIN_NAME}/api/login`, // frontend URI (ReactJS)
     };
     const { data } = await axios.post(
-      corsOptions,
+      `${DOMAIN_NAME}/api/login`,
       { email, password },
       config
     );
