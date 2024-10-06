@@ -102,7 +102,7 @@ const IncomeScreen = () => {
               className="first-input"
               type="text"
               value={year}
-              placeholder="Enter the year such as 2070"
+              placeholder="Enter the year such as 2024"
               onChange={(e) => setYear(e.target.value)}
               required
             />
@@ -141,7 +141,7 @@ const IncomeScreen = () => {
               className="first-input"
               type="text"
               value={year}
-              placeholder="Enter the year such as 2070"
+              placeholder="Enter the year such as 2024"
               onChange={(e) => setYear(e.target.value)}
               required
             />
@@ -162,7 +162,7 @@ const IncomeScreen = () => {
           <div className="outerIncome">
             <div className="innerIncome">
               <p>SN</p>
-              <p>Date</p>
+              <p>Salary Credited Date</p>
               <p>Particulars</p>
             </div>
             {allincome.map((value) => (
