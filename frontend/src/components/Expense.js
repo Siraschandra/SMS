@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import FormatDate from "./FormatDate";
 
 export default class Expense extends Component {
   render() {
@@ -6,7 +7,7 @@ export default class Expense extends Component {
     return (
       <div className="innerIncome">
         <p>{this.props.i}</p>
-        <p>{new Date(this.props.createdAt).format("YYYY-MM-DD")}</p>
+        <p>{FormatDate(this.props.createdAt)}</p>
         <p>
           Total Salary paid Rs {this.props.salaryAmount} to{" "}
           {this.props.teacher_name
