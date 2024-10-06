@@ -12,6 +12,7 @@ import {
   TEACHER_SALARY_FAIL,
   TEACHER_SALARY_REQUEST,
   TEACHER_SALARY_SUCCESS,
+  DOMAIN_NAME,
 } from "../constants/teacherConstants";
 
 export const PaySalary =
@@ -31,7 +32,7 @@ export const PaySalary =
         },
       };
       const { data } = await axios.post(
-        `/api/teachers/fees/${teachername}/${teacherid}`,
+        `${DOMAIN_NAME}/api/teachers/fees/${teachername}/${teacherid}`,
         {
           salaryForTheYear,
           salaryForTheMonth,
@@ -87,7 +88,7 @@ export const teacherregister =
         },
       };
       const { data } = await axios.post(
-        "/api/teachers/register",
+        `${DOMAIN_NAME}/api/teachers/register`,
         {
           teacher_name,
           qualification,
@@ -126,7 +127,9 @@ export const deleteTeacher = (id) => async (dispatch) => {
     dispatch({
       type: TEACHER_DELETE_REQUEST,
     });
-    const { data } = await axios.delete(`/api/teachers/delete/${id}`);
+    const { data } = await axios.delete(
+      `${DOMAIN_NAME}/api/teachers/delete/${id}`
+    );
     dispatch({
       type: TEACHER_DELETE_SUCCESS,
       payload: data,
@@ -148,7 +151,7 @@ export const listTeachers = () => async (dispatch) => {
     dispatch({
       type: TEACHER_LIST_REQUEST,
     });
-    const { data } = await axios.get("/api/teachers");
+    const { data } = await axios.get(`${DOMAIN_NAME}/api/teachers`);
     dispatch({
       type: TEACHER_LIST_SUCCESS,
       payload: data,
